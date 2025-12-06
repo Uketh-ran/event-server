@@ -1,0 +1,71 @@
+/* Sidebar container */
+.bg-dark {
+  background-color: #1e1e2f !important; /* dark shade */
+  color: white !important;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar title */
+.bg-dark h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* Menu list */
+.bg-dark ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu items */
+.bg-dark ul li {
+  margin-bottom: 20px;
+}
+
+/* Links */
+.bg-dark ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.bg-dark ul li a:hover {
+  background-color: #343454; /* dark purple-blue */
+  color: #ffd700; /* gold text */
+  padding-left: 15px;
+}
+
+/* Active page highlight */
+.bg-dark ul li a.active {
+  background-color: #27274d;
+  color: #ffd700;
+  padding-left: 15px;
+}
+
+/* Responsive - collapse sidebar on small screens */
+@media (max-width: 768px) {
+  .bg-dark {
+    width: 200px !important;
+    padding: 15px !important;
+  }
+  .bg-dark h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .bg-dark ul li a {
+    font-size: 14px;
+  }
+}
